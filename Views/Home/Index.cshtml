@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Insertar Producto</h1>
+    <form action="../producto/insertar" method="POST">
+        <label>Tipo Producto:</label>
+        <select name="idTipoProducto">
+            <option value="1">Autos</option>
+            <option value="2">Motos</option>
+            <option value="3">Camiones</option>
+        </select>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" />
+
+        <label>Precio:</label>
+        <input type="number" name="precio" />
+
+        <label>Cantidad:</label>
+        <input type="number" name="cantidad" />
+
+        <p><button type="submit">Insertar producto</button></p>
+    </form>
+
+    <h1 class="display-4">Modificar Producto</h1>
+    <form action="../producto/modificar" method="POST">
+        <label>Id Producto:</label>
+        <input type="number" name="idProducto" />
+
+        <label>Tipo Producto:</label>
+        <select name="idTipoProducto">
+            <option value="1">Autos</option>
+            <option value="2">Motos</option>
+            <option value="3">Camiones</option>
+        </select>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" />
+
+        <label>Precio:</label>
+        <input type="number" name="precio" />
+
+        <label>Cantidad:</label>
+        <input type="number" name="cantidad" />
+
+        <p><button type="submit">Modificar producto</button></p>
+    </form>
+
+    <h1 class="display-4">Eliminar Producto</h1>
+    <form action="../producto/eliminar" method="POST">
+        <label>Id Producto:</label>
+        <input type="number" name="idProducto" />
+
+        <p><button type="submit">Eliminar producto</button></p>
+    </form>
+</div>
